@@ -29,9 +29,9 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!-- buyer information  -->
-        <section class="container">
+        <section>
             <div class="text-center w-100 m-auto input-card my-3">
                 <div class="p-3 color-1">Please Input Your Information </div>
                 <div class="card-body">
@@ -111,6 +111,80 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- invoice section  -->
+        <section class='container table-data color-3 py-3 table-responsive'>
+            <table class="table table-light ">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="info-table">
+                    <!-- <tr>
+                    <th >1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr> -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">SubTotal</td>
+                        <td class="text-right">$<span id="sub-total">0</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">Tax</td>
+                        <td class="text-right">$ <span id="tax">0</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-end fw-bold">Grand Total</td>
+                        <td class="text-right fw-bold">$ <span id="grand-total">0</span> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- invoice table  -->
+        <section class="container color-4 py-3">
+            <div>
+                <div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="color-4 p-3 h-100 rounded">
+                                <span class='text-white'> Bank Transfer
+                                </span>
+                                <br>
+                                <span>
+                                    Account Name:
+                                    Account Number:
+                                    TaxnId:
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="color-4 p-3 h-100 rounded text-end">
+                                <p class='text-white'>
+                                    Total Amount
+                                </p>
+                                <p>$
+                                    <span class='text-warning fw-bold fs-3' id="grand-total-2">
+                                        0
+                                    </span>
+                                    <br>
+                                    Taxes Included
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of bottom part -->
+                <p class="text-center">
+                    Get started by creating a new file or uploading an existing file. We recommend every repository.
+                </p>
             </div>
         </section>
 
