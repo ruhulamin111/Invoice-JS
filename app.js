@@ -18,9 +18,19 @@ const productDetails = document.getElementById('add-details-btn').addEventListen
     <td>${productName}</td>
     <td>${productPrice}</td>
     <td>${productQunatity}</td>
-    <td>${productTotal}</td>
+    <td class="totals">${productTotal}</td>
     `;
     productOutputContainer.appendChild(productOutputTr);
-
-
+    subTotal();
 })
+
+const subTotal = () => {
+    const subTotalsOutput = document.getElementById('sub-total');
+    const subTotals = document.getElementsByClassName('totals');
+    let subTotal = 0;
+    for (const total of subTotals) {
+        const price = parseInt(total.innerText);
+        subTotal = subTotal + price;
+    }
+    subTotalsOutput.innerText = subTotal;
+}
