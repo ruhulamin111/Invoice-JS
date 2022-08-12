@@ -41,10 +41,7 @@ const subTotal = () => {
     const groundTotal = subTotal + taxAmount;
     const groundOutput = document.getElementById('grand-total');
     groundOutput.innerText = groundTotal;
+
+    const allTotal = document.getElementById('grand-total-2');
+    allTotal.innerText = groundTotal;
 }
-/* 
-const tax = (subTotal) => {
-    const taxAmount = subTotal * 0.1;
-    const taxOutput = document.getElementById('tax');
-    taxOutput.innerText = taxAmount;
-} */
