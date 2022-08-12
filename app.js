@@ -33,4 +33,18 @@ const subTotal = () => {
         subTotal = subTotal + price;
     }
     subTotalsOutput.innerText = subTotal;
+
+    const taxAmount = subTotal * 0.1;
+    const taxOutput = document.getElementById('tax');
+    taxOutput.innerText = taxAmount;
+
+    const groundTotal = subTotal + taxAmount;
+    const groundOutput = document.getElementById('grand-total');
+    groundOutput.innerText = groundTotal;
 }
+/* 
+const tax = (subTotal) => {
+    const taxAmount = subTotal * 0.1;
+    const taxOutput = document.getElementById('tax');
+    taxOutput.innerText = taxAmount;
+} */
